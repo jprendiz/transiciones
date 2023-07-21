@@ -1,0 +1,75 @@
+.shadow {
+    background: lightgray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #4158D0;
+
+    /* https://cssgradient.io/gradient-backgrounds/ */
+
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 50%;
+}
+
+.circle:hover {
+    transform: translate(20px, 20px);
+}
+
+.scale {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );
+}
+
+.scale:hover {
+    transform: scale(0.8);
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    background: #4158D0;
+}
+
+.rotate:hover {
+    transform: rotate(20deg);
+}
+
+.rotate2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    background: #4158D0;
+    transform-origin: right top;
+    margin-top: 10px;
+}
+
+.rotate2:hover {
+    transform: rotate(-20deg);
+}
+
+.container {
+    margin-top: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid green;
+    perspective: 100px;
+}
+
+.item {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #FFCC70;
+    opacity: 0.5;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg);
+}

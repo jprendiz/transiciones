@@ -1,0 +1,17 @@
+a:link {
+    color: rgb(105, 255, 155);
+}
+
+a:visited {
+    color: tomato;
+}
+a:hover {
+    background-color: palegoldenrod;
+}
+p:not(.maravillas) {
+    color: lightsalmon;
+}
+
+.container :nth-child(1) {
+    color:lightseagreen
+}
