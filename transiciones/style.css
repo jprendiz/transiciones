@@ -1,0 +1,31 @@
+.container {
+    background: LightBlue;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.container:hover .box{
+    transform: scale(1.2);
+}
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background: LightGreen;
+    transition: transform 1.5s;
+}
+
+.box2 {
+    background: LightSeaGreen;
+    transition: transform 2.5s;
+}
+
+.box3 {
+    background: Gainsboro;
+    transition: transform 3.5s;
+}
