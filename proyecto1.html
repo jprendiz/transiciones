@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid gray;
+        }
+        .one {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(221,224,60,1) 41%, rgba(221,224,60,1) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.7s;
+            display: grid;
+            place-content: center;
+        }
+        .two {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(28,64,224,1) 41%, rgba(28,64,224,1) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .three {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, red 41%, red 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+
+            display: grid;
+            place-content: center;
+        }
+        .four {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, purple 41%, purple 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .five {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, darkorange 41%, darkorange 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .six {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, green 41%, green 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .seven {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgb(139,0,0) 41%, rgb(139,0,0) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .eight {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgb(0,0,0) 41%, rgb(0,0,0) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .nine {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(221,224,60,1) 41%, rgba(221,224,60,1) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .ten {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(28,64,224,1) 41%, rgba(28,64,224,1) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .eleven {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, red 41%, red 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .twelve {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, purple 41%, purple 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .thirteen {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, darkorange 41%, darkorange 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .fourteen {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, green 41%, green 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 0.6s;
+            display: grid;
+            place-content: center;
+        }
+        .fifteen {
+            background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgb(139,0,0) 41%, rgb(139,0,0) 100%);
+            transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+            transition-delay: 1s;
+            display: grid;
+            place-content: center;
+        }
+
+        .inner-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid gray;
+            display: grid;
+            place-content: center;
+        }
+
+        .container {
+            background: #1E8449;
+        }
+
+        .container, .one-to-fifteen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .container:hover > div .two{
+            transform: translateX(-150px) translateY(150px);
+        }
+        .container:hover > div .ten{
+            transform: translateX(-130px) translateY(130px);
+        }
+        .container:hover > div .eleven{
+            transform: translateY(80px);
+        }
+        .container:hover > div .twelve{
+            transform: translateX(+130px) translateY(130px);
+        }
+        .container:hover > div .three{
+            transform: translateX(150px) translateY(150px);
+        }
+        .container:hover > div .four{
+            transform: translateX(-100px) translateY(100px);
+        }
+        .container:hover > div .thirteen{
+            transform: translateX(-80px) translateY(80px);
+        }
+        .container:hover > div .fourteen{
+            transform: translateX(80px) translateY(80px);
+        }
+        .container:hover > div .five{
+            transform: translateX(100px) translateY(100px);
+        }
+        .container:hover > div .six{
+            transform: translateX(-100px);
+        }
+        .container:hover > div .seven{
+            transform: translateX(100px);
+        }
+        .container:hover > div .eight{
+            transform: translateX(-40px) translateY(-40px);
+        }
+        .container:hover > div .nine{
+            transform: translateX(40px) translateY(-60px);
+        }
+        .container:hover > div .one{
+            transform: translateX(-4px) translateY(50px);
+        }
+        .container:hover > div .fifteen{
+            transform: translateX(4px) translateY(30px);
+        }
+        .fila2, .fila3, .fila4, .fila5{
+            display: flex;
+        }
+        .container:hover > div .one{
+            transform: translateY(50px);
+        }
+        .sixteen {
+            position: absolute;
+            top: 20px;
+            transition: transform 0.6s linear;
+            background: white;
+        }
+
+        .one-to-fifteen {
+            position: absolute;
+            top: 300px;
+        }
+
+        .sixteen:hover {
+            transform: translateY(230px);
+        }
+    </style>
+    <title>Proyecto 1</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="circle sixteen"></div>
+
+        <div class="one-to-fifteen">
+            <div class="circle one"><div class="inner-circle">1</div></div>
+        
+            <div class="fila2">
+                <div class="circle eight"><div class="inner-circle">8</div></div>
+                <div class="circle nine"><div class="inner-circle">9</div></div>
+            </div>
+            
+            <div class="fila3">
+                <div class="circle six"><div class="inner-circle">6</div></div>
+                <div class="circle fifteen"><div class="inner-circle">15</div></div>
+                <div class="circle seven"><div class="inner-circle">7</div></div>
+            </div>
+            
+            <div class="fila4">
+                <div class="circle four"><div class="inner-circle">4</div></div>
+                <div class="circle thirteen"><div class="inner-circle">13</div></div>
+                <div class="circle fourteen"><div class="inner-circle">14</div></div>
+                <div class="circle five"><div class="inner-circle">5</div></div>
+            </div>
+    
+            <div class="fila5">
+                <div class="circle two"><div class="inner-circle">2</div></div> 
+                <div class="circle ten"><div class="inner-circle">10</div></div>
+                <div class="circle eleven"><div class="inner-circle">11</div></div>
+                <div class="circle twelve"><div class="inner-circle">12</div></div>
+                <div class="circle three"><div class="inner-circle">3</div></div>
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
