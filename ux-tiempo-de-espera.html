@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav {
+            display: flex;
+            gap: 40px;
+        }
+        .nav li ul {
+            display: block;
+            visibility: hidden;
+            position: absolute;
+            transition: visibility 0.5s;
+            transition-delay: 300ms;
+        }
+        .nav li:hover > ul {
+            visibility: visible;
+            transition: visibility 0.5s;
+            transition-delay: 300ms;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="/">Mujer</a>
+            <ul>
+                <li><a href="/">Camisetas</a> </li>
+                <li><a href="/">Pantalones</a> </li>
+                <li><a href="/">Shorts</a> 
+                    <ul>
+                        <li><a href="/">Cortos</a> </li>
+                        <li><a href="/">Largos</a> </li>
+                        <li><a href="/">Transparentes</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Hombre</a>
+            <ul>
+                <li><a href="/">Zapatos</a> </li>
+                <li><a href="/">Pantalones</a> </li>
+                <li><a href="/">Deportes</a> 
+                    <ul>
+                        <li><a href="/">Ropa deportiva</a> </li>
+                        <li><a href="/">Basket</a> </li>
+                        <li><a href="/">Softball</a> </li>
+                        <li><a href="/">Beisball</a> </li>
+                        <li><a href="/">Tennis</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Niños</a></li>
+    </ul>
+</body>
+</html>
