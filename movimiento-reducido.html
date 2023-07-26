@@ -22,17 +22,29 @@
             backface-visibility: hidden;
             place-content: center;
         }
-
-        .card:hover {
-            transform: rotateY(180deg);
-        }
         .face{
             background-color: lightpink;
         }
         .back {
             background: lightblue;
-            transform: rotateY(180deg);
+            opacity: 0;
+        }
+        
+        .card:hover .back {
             opacity: 1;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .card:hover {
+                transform: rotateY(180deg);
+            }
+            .face{
+                background-color: lightpink;
+            }
+            .back {
+                background: lightblue;
+                transform: rotateY(180deg);
+                opacity: 1;
+            }
         }
     </style>
 </head>
